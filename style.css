@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+:root {
+    /* colors */
+    --color-background: #EC93A2;
+    --color-box: #0F2417;
+    --color-body: #D8EEE1;
+    --color-point: #FDF1E7;
+}
+
+body {
+    background-color: var(--color-background);
+    display: flex;
+    text-align: center;
+    height: 100vh;
+}
+
+.list {
+    width: 320px;
+    margin: auto;
+    border-radius: 20px;
+    background-color: var(--color-point);
+    -webkit-box-shadow: 11px 7px 16px -2px rgba(75, 75, 76, 0.52);
+    box-shadow: 11px 7px 16px -2px rgba(75, 75, 76, 0.52);
+}
+
+
+
+.header {
+    height: 48px;
+    font-size: 20px;
+    background-color: var(--color-box);
+    border-radius: 12px 12px 0 0;
+    color: var(--color-body);
+    line-height: 48px;
+}
+
+.items {
+    height: 400px;
+    overflow-y: auto;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 32px;
+}
+
+.item__delete {
+    transition: all 300ms ease-in;
+}
+
+.item__delete:hover {
+    color: red;
+    transform: scale(1.1);
+}
+
+.item__divider {
+    width: 90%;
+    height: 1px;
+    background-color: lightgray;
+    margin: auto;
+}
+
+.footer {
+    background-color: var(--color-box);
+    border-radius: 0 0 12px 12px;
+}
+
+.footer__input {
+    width: 100%;
+    height: 32px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 16px;
+    margin-bottom: 10px;
+}
+
+.footer__button {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+    background-color: var(--color-point);
+    border-radius: 50%;
+    transition: transform 300ms ease-in;
+    margin-bottom: 12px;
+}
+
+.footer__button:hover {
+    transform: scale(1.1);
+}
+
+/* 
+CSS Gradient
+https://cssgradient.io/ */
+
+/* CSS shadow generator, search google */
